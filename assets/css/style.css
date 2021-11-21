@@ -1,0 +1,595 @@
+/* common */
+.btn-common{
+    background-color: #3390d7;
+    border-color: #3390d7;
+    display: inline-block;
+    border: 2px solid rgb(233, 231, 231); 
+    padding: 11px 30px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.section-common{
+    padding: 100px 0;
+}
+.title-common{
+    color: #555;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 0 2px 12px rgb(0 0 0 / 5%);
+    letter-spacing: 2px;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #eee;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 50%);
+    display: none;
+}
+.back-to-top i{
+    font-size: 16px;
+}
+
+/* banner common */
+.banner-common{
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+
+
+/* header */
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header .container{ 
+    border-bottom: 1px solid rgba(221, 221, 221, 0.25);
+    padding: 20px 0;
+}
+.header-bg{
+    background-color: rgba(0,0,0,0.5);
+}
+.header-bg .container{
+    border-bottom: none;
+}
+
+
+.header .logo{
+    float: left;
+    margin-left: 15px;
+}
+.header .logo img{
+    height: 40px;
+}
+
+/* pc menu */
+.pc-menu{
+    float: right;
+    margin-right: 50px;
+}
+.pc-menu li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.pc-menu li a{
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    line-height: 40px;
+    transition: border linear 0.5s;
+    position: relative;
+}
+.pc-menu li a::after{
+    content: '';
+    width: 0;
+    height: 0px;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width linear 0.3s;
+}
+
+.pc-menu .active a::after{
+    width: 100%;
+}
+.pc-menu li:hover a::after{
+    width: 100%;
+    transition: width linear 0.3s;
+}
+
+/* black header style */
+.header-white-color{
+    background-color: #fff;
+}
+.header-white-color .pc-menu li a{
+    color: #000;
+}
+.header-white-color .pc-menu .active a{
+    color: #3390d7 ;
+}
+.header-white-color .pc-menu li a::after{
+    border-color: #3390d7;
+}
+.header-white-color .menu-icon{
+    color: #3390d7;
+}
+
+
+/* mobile menu */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 290px;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 300;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    padding: 60px 10px 10px 10px;
+    transition: left linear 0.5s;
+}
+.mobile-menu  i{
+    position: absolute;
+    font-size: 20px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.mobile-menu  a{
+    font-size: 15Wpx;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: block;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ededed;
+}
+.mobile-menu  .active a{
+    color: #3390d7;
+}
+.mobile-menu  a:hover{
+    color: #3390d7;
+}
+
+.mobile-menu-shade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 200;
+    visibility: hidden;
+}
+.mobile-menu.show{
+    left: 0;
+    transition: left linear 0.5s;
+}
+.mobile-menu-shade.show{
+    visibility: visible;
+}
+
+.menu-icon{
+    font-size: 20px;
+    color: #fff;
+    display: none;
+    float: right;
+    margin-right: 15px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+
+
+/* footer */
+.footer{
+    background-color: #222;
+    padding-top: 100px;
+}
+.footer h3{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.footer .row>div{
+    margin-bottom: 30px;
+    min-height: 170px;
+    padding-left: 20px;
+}
+.footer-company{
+    padding-right: 50px;
+}
+.footer-company img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+.footer-company p{
+    font-size: 15px;
+    color: #777;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.footer-link li{
+    margin: 10px 0;
+}
+.footer-link li a{
+    display: inline-block;
+    color: #777;
+    font-size: 15px;
+}
+.footer-link li a:hover{
+    color: #3390d7;
+}
+.footer-contact li{
+    color: #777;
+    margin: 10px 0;
+}
+.footer-contact i{
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.footer-contact span{
+    vertical-align: middle;
+    font-size: 15px;;
+}
+.copy-right{
+    padding: 40px 10px;
+    border-top: 1px solid #555;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+/*==========================================
+ company
+========================================== *
+
+/* index banner */
+.index-banner{
+    height: 800px;
+    position: relative;
+}
+.index-banner .swiper-container{
+    height: 100%;
+}
+.index-banner .swiper-container .swiper-slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.index-banner .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+}
+
+.index-banner .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    padding: 100px 0;
+    z-index: 100;
+}
+.index-banner .text-content{
+    text-align: center;
+    margin-top: 120px;
+    padding: 0 10px;
+}
+.index-banner .text-content h3{
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px;
+}
+.index-banner .text-content p{
+    color: #fff;
+    font-size: 20px;
+    margin: 30px 0;
+}
+.index-btn-box{
+    margin: 50px 0;
+}
+.index-btn-box a{
+    display: inline-block;
+    border: 2px solid rgb(233, 231, 231); 
+    padding: 11px 30px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 0 5px;
+    transition: all linear 0.3s;
+}
+.index-btn-box a.more{
+    background-color: #3390d7;
+    border-color: #3390d7;
+}
+.index-btn-box a.contact:hover{
+    background-color: #3390d7;
+    border-color: #3390d7;
+    color: #fff;
+    transition: all linear 0.3s;
+}
+
+/* .index-service */
+.index-service{
+    background-color: #f7f7f7;
+}
+.index-service .title-common{
+    text-align: center;
+}
+.index-service .list{
+    transition: all linear 0.2s;
+}
+.index-service .list:hover{
+    
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all linear 0.2s;
+}
+.index-service .row{
+    margin-top: 40px;
+}
+.index-service .row>div{
+    margin: 20px 0;
+}
+.index-service .list .top-img{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.index-service .list .top-img img{
+    width: 100%;
+    transition: transform linear 0.5s;
+}
+.index-service .list .top-img:hover img{
+    transform: scale(1.2);
+    transition: transform linear 0.5s;
+}
+.index-service .list .bottom-text{
+    padding: 20px 30px;
+}
+.index-service .list .bottom-text h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.index-service .list .bottom-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #666;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    overflow: hidden;
+    height: 75px;
+}
+.index-service .know-more{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* index-company */
+.index-company{
+    position: relative;
+}
+.index-company-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+}
+.index-company-bg img{
+    width: 100%;
+    height: 100%;
+}
+.index-company p{
+    font-weight: 400;
+    color: #555;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+
+
+/*==========================================
+ company
+========================================== */
+.company-banner{
+    background-image: url(../img/bg/bg4.jpg);
+}
+.company-info .text p{
+    font-weight: 400;
+    color: #555;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 20px 0;
+    text-indent: 2em;
+}
+
+.company-worth{
+    background-color: #f7f7f7;
+}
+.company-worth img{
+    width: 100%;
+}
+.company-worth .worth{
+    margin: 30px 0;
+}
+.company-worth .worth p{
+    font-size: 20px;
+    transition: margin-left linear 0.5s;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.company-worth .worth p i{
+    color: #3390d7;
+    margin: 0 10px;
+}
+.company-worth .worth p:hover{
+    margin-left: 50px;
+    transition: margin-left linear 0.5s;
+}
+
+
+
+/*==========================================
+ contact
+========================================== */
+.contact-banner{
+    background-image: url(../img/bg/bg5.jpg);
+}
+
+.contact-info .title-common{
+    text-align: center;
+}
+.contact-con{
+    margin-top: 100px;
+}
+.contact-con .list{
+    padding: 0 80px;
+    text-align: center;
+}
+.contact-con .list-border{
+    border-right: 1px solid #d3d0cc;
+}
+.contact-con .list i{
+    font-size: 40px;
+    line-height: 36px;
+    color: #3390d7;
+    margin-bottom: 30px;
+}
+.contact-con .list h3{
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.contact-con .list p{
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+}
+
+
+/*==========================================
+ contact
+========================================== */
+.service-banner {
+    background-image: url(../img/bg/bg6.jpg);
+}
+
+.service-list .list{
+    background-color: #fff;
+    margin: 30px 0;
+}
+.service-list .list .bottom-text h3{
+    font-weight: bold;
+}
+.service-list .list .bottom-text p {
+    -webkit-line-clamp: 4;
+    height: 100px;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .index-banner{
+        height: 700px;
+    }
+    .index-banner .text-content{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .index-banner{
+        height: 600px;
+    }
+    .index-company-bg{
+        display: none;
+    }
+
+    .contact-con .list{
+        margin-bottom: 50px;
+    }
+    .contact-con .list-border{
+        border: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header .container{
+        padding: 10px 0;
+    }
+    .pc-menu{
+        display: none;
+    }
+    .menu-icon{
+        display: inline-block;
+    }
+
+    .index-banner{
+        height: 500px;
+    }
+    .index-banner .text-content{
+        margin-top: 0px;
+    }
+    .index-banner .text-content h3{
+        font-size: 24px;
+        letter-spacing: 0px;
+        line-height: 40px;
+    }
+    .index-banner .text-content p{
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .title-common{
+        font-size: 26px;
+    }
+
+    .banner-common{
+        margin-top: 60px;
+        height: 300px;
+    }
+
+    .section-common{
+        padding: 80px 0;
+    }
+    
+}
+
